@@ -10,60 +10,63 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <style>
-.marquee-container {
-   width: 100%;
-   background-color: #f8f9fa;
-   padding: 15px 0;
- }
+    .marquee-container {
+      width: 100%;
+      background-color: #ffffff;
+      padding: 15px 0;
+    }
 
- .marquee-content {
-   display: flex;
-   animation: marquee 20s linear infinite;
- }
+    .marquee-content {
+      display: flex;
+      animation: marquee 20s linear infinite;
+    }
 
- .marquee-item {
-   flex: 0 0 auto;
-   padding: 0 20px;
-   font-size: 1.2rem;
-   color: #495057;
- }
+    .marquee-item {
+      flex: 0 0 auto;
+      padding: 0 20px;
+      font-size: 2.2rem;
+      color: #6c7177;
+    }
 
- @keyframes marquee {
-   0% {
-     transform: translateX(100%);
-   }
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
 
-   100% {
-     transform: translateX(-100%);
-   }
- }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
 
- /* Optional: Pause animation on hover */
- .marquee-container:hover .marquee-content {
-   animation-play-state: paused;
- }
-
-
-
+    /* Optional: Pause animation on hover */
+    .marquee-container:hover .marquee-content {
+      animation-play-state: running;
+    }
   </style>
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand font-monospace m-2" href="#">Global Brands</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto px-4">
-        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a></li>
-        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-x-twitter fa-xl" style="color: #ffffff;"></i></a></li>
-        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a></li>
-        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a></li>
-      </ul>
+<section id="start">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand font-monospace m-2" href="#home">Global Brands</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto px-4">
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-facebook fa-xl"
+                style="color: #ffffff;"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-x-twitter fa-xl"
+                style="color: #ffffff;"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-instagram fa-xl"
+                style="color: #ffffff;"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-youtube fa-xl"
+                style="color: #ffffff;"></i></a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</section>
 <nav class="navbar bg-body-tertiary sticky-top">
   <div class="container-fluid">
 
@@ -73,7 +76,7 @@
         <i class="fa-solid fa-bars"></i>
       </a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#"><strong>Home</strong></a></li>
+        <li><a class="dropdown-item" href="../Practical exam/home/anotherhw.html" target="_blank"><strong>Home</strong></a></li>
         <li><a class="dropdown-item" href="#"><strong>News</strong></a></li>
         <li><a class="dropdown-item" href="#"><strong>Global Brands Awards</strong></a></li>
         <li><a class="dropdown-item" href="#"><strong>Brands Today</strong></a></li>
@@ -84,7 +87,7 @@
 
     </div>
     <div class="center">
-      <a class="navbar-brand link-offset-2 link-underline link-underline-opacity-0" href="#">Home</a>
+      <a class="navbar-brand link-offset-2 link-underline link-underline-opacity-0" href="../Practical exam/home/anotherhw.html" target="_blank">Home</a>
       <a class="navbar-brand link-offset-2 link-underline link-underline-opacity-0" href="#">News</a>
       <a class="navbar-brand link-offset-2 link-underline link-underline-opacity-0" href="#">Global Brand Awards</a>
       <a class="navbar-brand link-offset-2 link-underline link-underline-opacity-0" href="#">Brands Today</a>
@@ -130,11 +133,12 @@
 </div>
 <div class="marquee-container overflow-hidden bg-light shadow-sm">
   <div class="marquee-content d-flex align-items-center">
-    <div class="marquee-item px-4 py-2 bg-primary text-white rounded-pill mx-2">Item 1</div>
-    <div class="marquee-item px-4 py-2 bg-success text-white rounded-pill mx-2">Item 2</div>
+    <div class="marquee-item px-4 bg-success text-white rounded-pill mx-2">Global Brand Awards 2024/25.  Venue: The
+      Grand Hyatt, Dubai-June 13th 2025.</div>
+    <!-- <div class="marquee-item px-4 py-2 bg-success text-white rounded-pill mx-2">Item 2</div>
     <div class="marquee-item px-4 py-2 bg-info text-white rounded-pill mx-2">Item 3</div>
     <div class="marquee-item px-4 py-2 bg-warning text-dark rounded-pill mx-2">Item 4</div>
-    <div class="marquee-item px-4 py-2 bg-danger text-white rounded-pill mx-2">Item 5</div>
+    <div class="marquee-item px-4 py-2 bg-danger text-white rounded-pill mx-2">Item 5</div> -->
   </div>
 </div>
 
@@ -209,69 +213,68 @@
 <hr>
 <h1 class="text-center"><a href="#" style="text-decoration: none; color: black;">More News</a></h1>
 <hr>
-<div class="row mb-2">
+<div class="px-5">
+  <div class="row mb-4">
 
-  <div class="col md 6">
-    <a href="#"><img src="image/row two 1.webp" class="d-block w-100 border border-success p-1" alt="..."></a>
+    <div class="col md 6">
+      <a href="#"><img src="image/row two 1.webp" class="d-block w-100 border border-success p-1" alt="..."></a>
+    </div>
+    <div class="col md 6">
+      <p style="text-align: justify;">The company was founded to produce and market Wozniak's Apple I personal computer. Its second computer, the Apple
+        II, became a best seller as one of the first mass-produced microcomputers. Apple introduced the Lisa in 1983 and
+        the Macintosh in 1984, as some of the first to use a graphical user interface and a mouse. By 1985,
+        internal company problems led to Jobs leaving to form NeXT, Inc., Apple was weeks away from bankruptcy. To resolve its failed operating system
+        strategy, it bought NeXT, effectively bringing Jobs back to the company, who guided Apple back to profitability
+        over the next decade with the introductions of the iMac, iPod, iPhone, and iPad devices to critical acclaim as
+        well as the iTunes Store, launching the "Think different" advertising campaign, and opening the Apple Store retail
+        chain. These moves elevated Apple to consistently be one of the world's most valuable brands since about 2010.
+        Jobs resigned in 2011 for health reasons, and died two months later; he was succeeded as CEO by Tim Cook.</p>
+    </div>
+  
+  
+  
   </div>
-  <div class="col md 6">
-    <p>The company was founded to produce and market Wozniak's Apple I personal computer. Its second computer, the Apple
-      II, became a best seller as one of the first mass-produced microcomputers. Apple introduced the Lisa in 1983 and
-      the Macintosh in 1984, as some of the first computers to use a graphical user interface and a mouse. By 1985,
-      internal company problems led to Jobs leaving to form NeXT, Inc., and Wozniak withdrawing to other ventures; John
-      Sculley served as long-time CEO for over a decade. In the 1990s, Apple lost considerable market share in the
-      personal computer industry to the lower-priced Wintel duopoly of the Microsoft Windows operating system on
-      Intel-powered PC clones. In 1997, Apple was weeks away from bankruptcy. To resolve its failed operating system
-      strategy, it bought NeXT, effectively bringing Jobs back to the company, who guided Apple back to profitability
-      over the next decade with the introductions of the iMac, iPod, iPhone, and iPad devices to critical acclaim as
-      well as the iTunes Store, launching the "Think different" advertising campaign, and opening the Apple Store retail
-      chain. These moves elevated Apple to consistently be one of the world's most valuable brands since about 2010.
-      Jobs resigned in 2011 for health reasons, and died two months later; he was succeeded as CEO by Tim Cook.</p>
+  <div class="row mb-2">
+  
+    <div class="col md 6">
+      <a href="#"><img src="image/row two 2.webp" class="d-block w-100 rounded-circle border border-dark p-1"
+          alt="..."></a>
+    </div>
+    <div class="col md 6 mt-5">
+      <p style="text-align: justify;">The International Council on Mining and Metals (ICMM) and the International Network for Acid Prevention (INAP)
+        launched a new toolkit meant to assist mining companies in resolving environmental issues concerning acid rock
+        drainage (ARD) and mine leaching (ML). This management tool thus aims at minimising water pollution and lowering
+        remediation costs in the long run to enhance sustainable industrial practices.
+        The Tool for Acid Rock Drainage and Metal Leaching Prevention and Management gives a comprehensive road map for
+        the management of materials during the entire lifecycle of mining
+        activities—from exploration to post-closure management of a mining site—thus minimising the likelihood of
+        discharging highly acidic water containing metal as a potential byproduct of mining operations.</p>
+    </div>
+  
+  
+  
   </div>
-
-
-
-</div>
-<div class="row mb-2">
-
-  <div class="col md 6">
-    <a href="#"><img src="image/row two 2.webp" class="d-block w-100 rounded-circle border border-dark p-1"
-        alt="..."></a>
+  <div class="row mb-2">
+  
+    <div class="col-md-6">
+      <a href="#"><img src="image/row two 3.webp" class="d-block w-100 " alt="..."></a>
+    </div>
+    <div class="col md 6 mt-2">
+      <p style="text-align: justify;">The emerging trend of swicy, which essentially involves combining sweet and spicy flavours, is a classic example
+        of how the industry continues to evolve. In that regard, the prospects are very promising for a particular spice
+        in 2025. According to McCormick, a world-renowned brand of seasoning and spices, the ají amarillo will be the
+        “flavour of the year.”. It is chilli and indigenous to South America. Soon, diners are expected to find this
+        colourful condiment inside establishments, households, and even bartenders. Many people eat spicy food, but each
+        has its favourite type of chilli. And for instance, ají amarillo is one of those. It is cherished for its bright
+        colour, yellow to orange, and aromas, which do not overpower each other but can be described as sweetish and hot.
+        Some people will also say that the taste reminds them of passionfruit or mango. In any case, it is fairly hot with
+        almost the same degree as chilli pepper, although the heat distribution is different. That is why chefs find it
+        easier to cook with when they don’t intend to burn their diners’ taste buds.</p>
+    </div>
+  
+  
+  
   </div>
-  <div class="col md 6 mt-5">
-    <p>The International Council on Mining and Metals (ICMM) and the International Network for Acid Prevention (INAP)
-      launched a new toolkit meant to assist mining companies in resolving environmental issues concerning acid rock
-      drainage (ARD) and mine leaching (ML). This management tool thus aims at minimising water pollution and lowering
-      remediation costs in the long run to enhance sustainable industrial practices.
-      The Tool for Acid Rock Drainage and Metal Leaching Prevention and Management gives a comprehensive road map for
-      the management of materials during the entire lifecycle of mining
-      activities—from exploration to post-closure management of a mining site—thus minimising the likelihood of
-      discharging highly acidic water containing metal as a potential byproduct of mining operations.</p>
-  </div>
-
-
-
-</div>
-<div class="row mb-2">
-
-  <div class="col md 6">
-    <a href="#"><img src="image/row two 3.webp" class="d-block w-100 " alt="..."></a>
-  </div>
-  <div class="col md 6 mt-2">
-    <p>The emerging trend of swicy, which essentially involves combining sweet and spicy flavours, is a classic example
-      of how the industry continues to evolve. In that regard, the prospects are very promising for a particular spice
-      in 2025. According to McCormick, a world-renowned brand of seasoning and spices, the ají amarillo will be the
-      “flavour of the year.”. It is chilli and indigenous to South America. Soon, diners are expected to find this
-      colourful condiment inside establishments, households, and even bartenders. Many people eat spicy food, but each
-      has its favourite type of chilli. And for instance, ají amarillo is one of those. It is cherished for its bright
-      colour, yellow to orange, and aromas, which do not overpower each other but can be described as sweetish and hot.
-      Some people will also say that the taste reminds them of passionfruit or mango. In any case, it is fairly hot with
-      almost the same degree as chilli pepper, although the heat distribution is different. That is why chefs find it
-      easier to cook with when they don’t intend to burn their diners’ taste buds.</p>
-  </div>
-
-
-
 </div>
 <hr>
 
@@ -356,7 +359,12 @@
           </h2>
           <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
             <div class="accordion-body">
-              <p>Ozempic is an injectable medication under the commercial name semaglutide, and it belongs to a class of drugs called GLP-1 receptor agonists, which stimulate the receptors of glucagon-like peptide-1 (GLP-1). By recognising GLP-1 hormones, these drugs regulate the blood sugar in one’s system and insulin production and promote appetite suppression. An interesting effect of Ozempic for treating type 2 diabetes is the appetite suppressant effect, and as such, Ozempic has become widely available for general weight loss control.</p>
+              <p>Ozempic is an injectable medication under the commercial name semaglutide, and it belongs to a class of
+                drugs called GLP-1 receptor agonists, which stimulate the receptors of glucagon-like peptide-1 (GLP-1).
+                By recognising GLP-1 hormones, these drugs regulate the blood sugar in one’s system and insulin
+                production and promote appetite suppression. An interesting effect of Ozempic for treating type 2
+                diabetes is the appetite suppressant effect, and as such, Ozempic has become widely available for
+                general weight loss control.</p>
             </div>
           </div>
         </div>
@@ -388,30 +396,31 @@
   </div>
   <div class="col-md-4">
     <a href="#"
-      style="background-color: rgb(255, 255, 255); color: rgb(5, 4, 4); text-decoration: none; text-align: justify;"
-      class="btn btn-bg-light mb-2 ">ABOUT US</a> <br>
+      style="background-color: rgb(10, 3, 3); color: rgb(255, 255, 255); text-decoration: none; text-align: justify;"
+      class="btn btn-bg-light mb-2 btn-lg">ABOUT US</a> <br>
     <a href="#"
-      style="background-color: rgb(255, 255, 255); color: rgb(12, 9, 9); text-decoration: none; text-align: justify;"
-      class="btn btn-bg-light mb-2 ">CONTACT US</a><br>
+      style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); text-decoration: none; text-align: justify;"
+      class="btn btn-bg-light mb-2 btn-lg">CONTACT US</a><br>
     <a href="#"
-      style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); text-decoration: none; text-align: justify;"
-      class="btn btn-bg-light mb-2 ">PRIVACY AND COOKIES POLICY-GLOBAL BRANDS MAGAZINE</a><br>
+      style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); text-decoration: none; text-align: justify;"
+      class="btn btn-bg-light mb-2 btn-lg text-break">PRIVACY AND COOKIES POLICY-GLOBAL BRANDS MAGAZINE</a><br>
     <a href="#"
-      style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); text-decoration: none; text-align: justify;"
-      class="btn btn-bg-light mb-2 ">SITEMAP</a><br>
+      style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); text-decoration: none; text-align: justify;"
+      class="btn btn-bg-light mb-2 btn-lg">SITEMAP</a><br>
 
-<br>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
-      <a href="#" class="px-2"><i class="fa-brands fa-facebook fa-2xl" style="color: #2866e2;"></i></a>
-    <a href="#" class="px-2"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #09090a;"></i></a>
+    <a href="#" class="px-2"><i class="fa-brands fa-facebook fa-2xl" style="color: #2866e2;"></i></a>
     <a href="#" class="px-2"><i class="fa-brands fa-pinterest fa-2xl" style="color: #9c111d;"></i></a>
+    <a href="#" class="px-2"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #09090a;"></i></a>
     <a href="#" class="px-2"><i class="fa-brands fa-instagram fa-2xl" style="color: #d64141;"></i></a>
-    <a href="#" class="px-2"><i class="fa-brands fa-youtube fa-2xl" style="color: #c22121;"></i></a>
     <a href="#" class="px-2"><i class="fa-brands fa-linkedin fa-2xl" style="color: #1624df;"></i></a>
+    <a href="#" class="px-2"><i class="fa-brands fa-youtube fa-2xl" style="color: #c22121;"></i></a>
+    
     <!-- <form action="#">
       <label for="#">Name</label><br>
       <input type="text" placeholder="Full Name"><br>
@@ -437,6 +446,16 @@
 
 
 </div>
+
+<footer class="footer text-center py-2 bg-dark text-light mt-2">
+  <p class="mt-2">Copyright - Global Brands Publications Limited © 2024. Global Brands Publications is not responsible
+    for the content of external sites.</p>
+</footer>
+
+<button onclick="location.href='#start'"
+  class="btn btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle p-3 shadow">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
 
 
 
